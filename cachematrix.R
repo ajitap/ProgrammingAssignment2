@@ -26,8 +26,8 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(i)
         }
-        data  <- x$get()
-        i  <- solve(data, ...)
+        dat  <- x$get()
+        i  <- solve(dat, ...)
         x$setinvmatrix (i)
         i
 }
